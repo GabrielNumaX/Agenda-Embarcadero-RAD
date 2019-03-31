@@ -1,0 +1,18 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit2H
+#define Unit2H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+//---------------------------------------------------------------------------
+class Tmodulo : public TDataModule
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall Tmodulo(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE Tmodulo *modulo;
+//---------------------------------------------------------------------------
+#endif

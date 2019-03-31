@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit2H
+#define Unit2H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Data.DB.hpp>
+#include <IBCustomDataSet.hpp>
+#include <IBDatabase.hpp>
+//---------------------------------------------------------------------------
+class Tmodulo : public TDataModule
+{
+__published:	// IDE-managed Components
+	TIBDatabase *IBDatabase1;
+	TIBTransaction *IBTransaction1;
+	TIBDataSet *contacto;
+private:	// User declarations
+public:		// User declarations
+	__fastcall Tmodulo(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE Tmodulo *modulo;
+//---------------------------------------------------------------------------
+#endif

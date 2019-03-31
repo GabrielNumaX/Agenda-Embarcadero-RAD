@@ -1,0 +1,182 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'Contacto'
+  ClientHeight = 377
+  ClientWidth = 756
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 8
+    Width = 740
+    Height = 185
+    DataSource = DataSource1
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'IDCONTACTO'
+        Title.Caption = 'Id'
+        Width = 33
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CONTACTONOMB'
+        Title.Caption = 'Nombre y Apellido'
+        Width = 209
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CONTACTODIRE'
+        Title.Caption = 'Direccion'
+        Width = 148
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CONTACTONUM'
+        Title.Caption = 'Numero'
+        Width = 55
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CONTACTOPISO'
+        Title.Caption = 'Piso'
+        Width = 38
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CONTACTOTEL1'
+        Title.Caption = 'Cel'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CONTACTOTEL2'
+        Title.Caption = 'Tel'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CONTACTOTEL3'
+        Title.Caption = 'Fax'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CONTACTOMAIL'
+        Title.Caption = 'E-mail'
+        Width = 141
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CONTACTOESTC'
+        Title.Caption = 'Estado civ.'
+        Width = 91
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CONTACTOFECHNAC'
+        Title.Caption = 'Fecha Nac.'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CONTACTOFECHALTA'
+        Title.Caption = 'Fecha Alta'
+        Width = 68
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CONTACTOOBSERV'
+        Title.Caption = 'Observaciones'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CONTACTOOCUP'
+        Title.Caption = 'Ocupacion'
+        Width = 119
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CONTACTODNI'
+        Title.Caption = 'DNI'
+        Width = 95
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CONTACTOCUIT'
+        Title.Caption = 'Cuit/Cuil'
+        Width = 132
+        Visible = True
+      end>
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 209
+    Top = 199
+    Width = 260
+    Height = 25
+    VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast]
+    Hints.Strings = (
+      'First record'
+      'Prior record'
+      'Next record'
+      'Last record'
+      '')
+    Kind = dbnHorizontal
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 232
+    Top = 320
+    Width = 75
+    Height = 25
+    Caption = 'Nuevo'
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 313
+    Top = 320
+    Width = 75
+    Height = 25
+    Caption = 'Eliminar'
+    TabOrder = 3
+  end
+  object Button3: TButton
+    Left = 394
+    Top = 320
+    Width = 75
+    Height = 25
+    Caption = 'Editar'
+    TabOrder = 4
+  end
+  object DataSource1: TDataSource
+    DataSet = modulo.contacto
+    Left = 80
+    Top = 208
+  end
+end

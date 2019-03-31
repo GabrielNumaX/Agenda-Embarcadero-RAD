@@ -1,0 +1,31 @@
+object modulo: Tmodulo
+  OldCreateOrder = False
+  Height = 258
+  Width = 415
+  object IBDatabase1: TIBDatabase
+    Connected = True
+    DatabaseName = 'C:\Users\NumaX\Desktop\Proyecto Final\BDD\AGENDABDD.GDB'
+    Params.Strings = (
+      'user_name=SYSDBA'
+      'password=masterkey')
+    LoginPrompt = False
+    DefaultTransaction = IBTransaction1
+    ServerType = 'IBServer'
+    Left = 32
+    Top = 16
+  end
+  object IBTransaction1: TIBTransaction
+    Active = True
+    DefaultDatabase = IBDatabase1
+    Left = 104
+    Top = 16
+  end
+  object contacto: TIBDataSet
+    Database = IBDatabase1
+    Transaction = IBTransaction1
+    SelectSQL.Strings = (
+      'select * from CONTACTO')
+    Left = 184
+    Top = 16
+  end
+end
